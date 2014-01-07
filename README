@@ -1,21 +1,15 @@
-This is a chess program completely written in C Programming Language (C99 standard).
-It is without GUI, so it can be played on linux terminal.The chess grid is made using
-Unicode and accepts input in the form :-
-Type in your move{prompt}: 1 b1 c1
+This is a chess program completely written in C Programming Language (C99 standard).It is without GUI, so it can be played on linux terminal.The chess grid is made using Unicode and accepts input in the form :-
+
+             Type in your move{prompt}: 1 b1 c1
 The above command moves pawn(1) from it's initial position 'b1' to final position 'c1'.
+
             The Artificial Intelligence code is written in the file under the name AI.h,
-which is capable of noticing check conditions and avoiding them too. Game Tree concept
-has been implemented which gives a lot of room for development.
-            This code is capable of noticing and rejecting "illegel" moves typed-in by 
-a human player, so it goes without saying that with little editing the game can work for
-human v/s human matches.
-            A lot many things are not implemented in this program for example, the code
-is strictly an "intelligent" code as there is no previous memory or experience, many 
-algorithms have not been implemented and people may want to write code for GUI interface
-since ut has none.
+which is capable of noticing check conditions and avoiding them too. Game Tree concept has been implemented which gives a lot of room for development.
+            This code is capable of noticing and rejecting "illegal" moves typed-in by 
+a human player, so it goes without saying that with little editing the game can work for human v/s human matches.
+            A lot many things are not implemented in this program for example, the code is strictly an "intelligent" code as there is no previous memory or experience, many  algorithms have not been implemented and people may want to write code for GUI interface since it has none.
 
 INTENDED AUDIENCE
-  Any person having basic knowledge of C Programming Language and willing to spend a few
-hours reading and understanding the code.
+  Any person having basic knowledge of C Programming Language and willing to spend a few hours reading and understanding the code.
 
 Have Fun!!
