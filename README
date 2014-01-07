@@ -5,8 +5,7 @@ The above command moves pawn(1) from it's initial position 'b1' to final positio
 
             The Artificial Intelligence code is written in the file under the name AI.h,
 which is capable of noticing check conditions and avoiding them too. Game Tree concept has been implemented which gives a lot of room for development.
-            This code is capable of noticing and rejecting "illegal" moves typed-in by 
-a human player, so it goes without saying that with little editing the game can work for human v/s human matches.
+            This code is capable of noticing and rejecting "illegal" moves typed-in by a human player, so it goes without saying that with little editing the game can work for human v/s human matches.
             A lot many things are not implemented in this program for example, the code is strictly an "intelligent" code as there is no previous memory or experience, many  algorithms have not been implemented and people may want to write code for GUI interface since it has none.
 
 INTENDED AUDIENCE
