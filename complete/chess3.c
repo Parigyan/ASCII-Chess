@@ -68,9 +68,9 @@ int main()
 
 /***************************************TAKING THE INPUT**********************************************/
     if(checker%2 ==0)
-     { 
-       int loop =0;
-       for(loop;loop<=1000000000;loop++)
+    { 
+       int loop =0;						/********Delay Loop********/
+       for(loop;loop<=1000000000;loop++)	/******To enhance the gameplay and make it look more real******/
        {
           ;
        };
