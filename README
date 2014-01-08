@@ -3,7 +3,7 @@ This is a chess program completely written in C Programming Language (C99 standa
              Type in your move{prompt}: 1 b1 c1
 The above command moves pawn(1) from it's initial position 'b1' to final position 'c1'.
 
-            The Artificial Intelligence code is written in the file under gcc the name AI.h, which is capable of noticing check conditions and avoiding them too. Game Tree concept has been implemented which gives a lot of room for development as in here the evaluation is being done only for a single future instance i.e. it predicts the human output for the next immediate move only and then from there ,it evaluates the best possible move for itself(computer).So there is enough space to increase the accuracy of the game by evaluating the outcomes for more future instances 
+            The Artificial Intelligence code is written in the file under gcc the name AI.c, which is capable of noticing check conditions and avoiding them too. Game Tree concept has been implemented which gives a lot of room for development as in here the evaluation is being done only for a single future instance i.e. it predicts the human output for the next immediate move only and then from there ,it evaluates the best possible move for itself(computer).So there is enough space to increase the accuracy of the game by evaluating the outcomes for more future instances 
             
             This code is capable of noticing and rejecting "illegal" moves typed-in by a human player, so it goes without saying that with little editing the game can work for human v/s human matches.
             A lot many things are not implemented in this program for example, the code is strictly an "intelligent" code as there is no previous memory or experience, many  algorithms have not been implemented and people may want to write code for GUI interface since it has none.
@@ -12,8 +12,8 @@ INTENDED AUDIENCE
   Any person having basic knowledge of C Programming Language and willing to spend a few hours reading and understanding the code.
 
 COMPILATION
-Type-in the following command in the directory containing the files chess3.c and AI.h:-
-       gcc -std="c99" chess3.c AI.h -o chess
+Type-in the following command in the directory containing the files chess3.c and AI.c:-
+       gcc -std="c99" chess3.c AI.c -o chess
  which will create an executable file under the name chess, open this file and the game will be up and running.
  
 Have Fun!!
