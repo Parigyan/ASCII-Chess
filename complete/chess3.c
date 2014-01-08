@@ -5,7 +5,7 @@
 #include <string.h>
 #include <stdlib.h>  
 #include <unistd.h>
-#include "AI.h"
+#include "AI.c"
 
 /* 1 = PAWN
  * 2 = KNIGHT
