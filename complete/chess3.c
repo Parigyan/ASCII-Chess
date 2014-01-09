@@ -1332,18 +1332,5 @@ void printing(char chp [2][8][8])
      printf("       '1'=>PAWN        '2'=>KNIGHT          '4'=>BISHOP\n       '5'=>ROOK        '7'=>QUEEN           '9'=>KING");
      printf("\n\n");
 
-/*	for(a=0 ; a<=7;a++)
- *	{
-           for(b=0 ; b<=7; b++)
-           {
-               printf("%c ", chp[0][a][b]);
-              
-               if(b == 7)
-                {
-                 printf("\n");
-                }
-           }
-       }*/
-
 
 }
