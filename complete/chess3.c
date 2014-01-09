@@ -140,11 +140,11 @@ int main()
       }
 
 /*
-      printf("\n");
-      printf("%c \n", d);
-      printf("%s \n", lin1 );
-      printf("%sa\n", help);
-      printf("%s \n", initv);
+      printf("\n");                            The comments have been left
+      printf("%c \n", d);                      as such because people who are new
+      printf("%s \n", lin1 );                  to the source code can uncomment the
+      printf("%sa\n", help);                   statements and understanding the significance
+      printf("%s \n", initv);                  and working of the variables.
       printf("%s \n", finlv);
 
 */
