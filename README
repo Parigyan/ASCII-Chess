@@ -16,5 +16,15 @@ Type-in the following command in the directory containing the files chess3.c and
        gcc -std="c99" chess3.c AI.c -o chess
  which will create an executable file under the name chess, open this file and the game will be up and running.
  
+FOR WINDOWS USERS
+You may download many of the gcc ide's or softwares available for free on the net.Some of the Ide's are given here:
+
+Eclipse CDT
+Cygwin 
+
+Cygwin gives a linux like environment on linux. If you wish to proceed in the direction of software development, using a good shell won't hurt.
+One of the other softwares is Gcw which gives excellent portability options and is a better choice for those who are looking non intensive applications like only C programming.The link is given below:
+http://sourceforge.net/projects/gcw/
+ 
 Have Fun!!
 
