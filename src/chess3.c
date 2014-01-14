@@ -143,7 +143,7 @@ int main()
       printf("\n");                            The comments have been left
       printf("%c \n", d);                      as such because people who are new
       printf("%s \n", lin1 );                  to the source code can uncomment the
-      printf("%sa\n", help);                   statements and understanding the significance
+      printf("%sa\n", help);                   statements and understand the significance
       printf("%s \n", initv);                  and working of the variables.
       printf("%s \n", finlv);
 
@@ -1224,8 +1224,8 @@ void printing(char chp [2][8][8])
 
                   else if( (hor+vert)%2 != 0 )
                   {
-                    printf("\u2588\u2588\u2588\u2588\u2588\u2588\u2588");
-                  }
+                    printf("\u2588\u2588\u2588\u2588\u2588\u2588\u2588");     /* the characters inside the print statement*/
+                  }                                                           /* are unicodes used for printing the chess grid*/
                   hor++;
               }
 
@@ -1247,7 +1247,7 @@ void printing(char chp [2][8][8])
                   {
                       if(chp[1][a][b] == '1')
                       {
-                       printf("   \x1b[31m%c\x1b[0m   ", chp[0][a][b]);
+                       printf("   \x1b[31m%c\x1b[0m   ", chp[0][a][b]);                   /*unicode*/
                       }
 
                       if(chp[1][a][b] == ' ')
@@ -1257,7 +1257,7 @@ void printing(char chp [2][8][8])
 
                       if(chp[1][a][b] == '2')
                       {
-                       printf("   \x1b[32m%c\x1b[0m   ", chp[0][a][b]);
+                       printf("   \x1b[32m%c\x1b[0m   ", chp[0][a][b]);                   /*unicode*/
                       }
                   }
 
