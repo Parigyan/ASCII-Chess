@@ -19,12 +19,17 @@ Type-in the following command in the directory containing the files chess3.c and
 FOR WINDOWS USERS
 You may download many of the gcc ide's or softwares available for free on the net.Some of the Ide's are given here:
 
-Eclipse CDT
-Cygwin 
+1)Eclipse CDT (you can download bundle from http://eclipse.org)
 
-Cygwin gives a linux like environment on windows. If you wish to proceed in the direction of software development, using a good shell won't hurt.
-One of the other softwares is Gcw , which gives excellent portability options and is a better choice for beginners.The link is given below:
-http://sourceforge.net/projects/gcw/
- 
+2)Cygwin (http://www.cygwin.com/)
+  gives a linux like environment on windows
+
+3)Code::Blocks IDE (http://www.codeblocks.org/)
+  
+4)CodeLite opensource cross platform IDE(http://codelite.org/) 
+  It works great on almost all Operating Systems: Windows XP/7 and 8, Debian / Ubuntu, Fedora / OpenSUSE, Mac OSX 10.5.8
+
+If you wish to proceed in the direction of software development, using a good shell won't hurt!
+
 Have Fun!!
 
