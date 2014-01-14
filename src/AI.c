@@ -500,6 +500,7 @@ void common_init(int i1, int j1, int k1, int l1, char swap[2][8][8], node *root,
 
 void FreeAll(node*);
 
+/*From here begins the AI operation*/
 void AIfunc(char origin[2][8][8])
 {
  /*   printf("origin starts\n");
@@ -663,9 +664,9 @@ void AIfunc(char origin[2][8][8])
 
     int safe_mode = 0;/*this is used so that we know that ult_vic_shell is
                        *stored with values which destroy the imminent threat
-                       *FOR EXAMPLE: if a knight is going to kill our king
-                       *             we are going to kill the knight if it
-                       *             is possible.*/
+                       *FOR EXAMPLE: if a knight is going to kill our king,
+                       *             the computer will kill the knight if 
+                       *             possible.*/
 
     for(z;z<=99;z++)
     {  
@@ -743,10 +744,11 @@ void AIfunc(char origin[2][8][8])
        if(ind_array[z]!= 200)
        {
           shell = root->array[ind_array[z]];
-          shell->max_val = ((shell->max_val + shell->min_val)*10)/2; /*10 is multiplied so that we don't need float   */
+          shell->max_val = ((shell->max_val + shell->min_val)*10)/2; /*10 is multiplied so that we have an integer   */
           shell->max_val = shell->max_val + shell->elist->eval*100;  /*shell->elist->eval gives the value of grid of  */
                                                                      /*the node 1 and shell->max_val earlier containes*/
-                                                                     /*the avg of the possible moves by the human      */
+                                                                     /*the avg of the possible moves by the human player */
+                                                                     /*shell->elist->eval is multiplied by 100 to give it a higher edge in the final calculation*/
 
           if(ma_val < shell->max_val)
              ma_val = shell->max_val;
@@ -816,7 +818,7 @@ void AIfunc(char origin[2][8][8])
     };
 
     printf("i am here\n");                 /*produces a random number for selecting*/ 
-    end_array--;                           /*a move amongst possible choices*/
+    end_array--;                           /*a move amongst equiprobable choices*/
     srand(time(NULL));
     z=0;
     z = rand()%(end_array+1);
@@ -849,8 +851,8 @@ void AIfunc(char origin[2][8][8])
 return ;
 }
 
-void FreeAll(node* root)
-{  
+void FreeAll(node* root)                                         /*Returning the memory back to the heap*/
+{                                                                /*so as to avoid an overhead*/
   if(root!= NULL)
   {
     int z,c =0;
