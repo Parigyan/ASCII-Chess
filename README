@@ -13,7 +13,7 @@ INTENDED AUDIENCE
 
 COMPILATION
 Type-in the following command in the directory containing the files chess3.c and AI.c:-
-       gcc -std="c99" chess3.c AI.c -o chess
+       gcc -std="c99" chess3.c AI.h -o chess
  which will create an executable file under the name chess, open this file and the game will be up and running.
  
 FOR WINDOWS USERS
