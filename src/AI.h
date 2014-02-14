@@ -748,7 +748,8 @@ void AIfunc(char origin[2][8][8])
           shell->max_val = shell->max_val + shell->elist->eval*100;  /*shell->elist->eval gives the value of grid of  */
                                                                      /*the node 1 and shell->max_val earlier containes*/
                                                                      /*the avg of the possible moves by the human player */
-                                                                     /*shell->elist->eval is multiplied by 100 to give it a higher edge in the final calculation*/
+                                                                     /*shell->elist->eval is multiplied by 100 to give it 
+                                                                      *a higher edge in the final calculation*/
 
           if(ma_val < shell->max_val)
              ma_val = shell->max_val;
