@@ -5,7 +5,7 @@
 #include <string.h>
 #include <stdlib.h>  
 #include <unistd.h>
-#include "AI.c"
+#include "AI.h"
 
 /* 1 = PAWN
  * 2 = KNIGHT
@@ -180,7 +180,7 @@ int main()
             char y;
     
             if( (y = getchar() ) == 'y' || (y = getchar() )== 'Y')
-            break;
+            goto END;
        }
 
 
@@ -277,7 +277,7 @@ int main()
   }
 
  }
-
+   END:
    return 0;
 }
 
