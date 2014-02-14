@@ -12,7 +12,7 @@ INTENDED AUDIENCE
   Any person having basic knowledge of C Programming Language and willing to spend a few hours reading and understanding the code.
 
 COMPILATION
-Type-in the following command in the directory containing the files chess3.c and AI.c:-
+Type-in the following command in the directory containing the files chess3.c and AI.h:-
        gcc -std="c99" chess3.c AI.h -o chess
  which will create an executable file under the name chess, open this file and the game will be up and running.
  
