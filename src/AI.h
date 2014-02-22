@@ -553,7 +553,12 @@ void AIfunc(char origin[2][8][8])
              maxim_val = shell->elist->eval;
     };
 
-    maxim_val = 0.3*maxim_val;
+    if(maxim_val >= 0)
+       maxim_val = 0.3*maxim_val;
+
+    else
+       maxim_val = 3*maxim_val;
+       
     printf("maxim_val %d\n",maxim_val);
     z =0;
 
